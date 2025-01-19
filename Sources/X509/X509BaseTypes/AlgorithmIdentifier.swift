@@ -245,6 +245,8 @@ extension AlgorithmIdentifier: CustomStringConvertible {
             return "sha384"
         case .sha512, .sha512UsingNil:
             return "sha512"
+        case .ed25519:
+            return "ed25519"
         default:
             return "AlgorithmIdentifier(\(self.algorithm) - \(String(reflecting: self.parameters)))"
         }

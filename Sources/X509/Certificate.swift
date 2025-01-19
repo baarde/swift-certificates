@@ -215,6 +215,9 @@ public struct Certificate {
     /// Certificate Signing Request. The ``signature-swift.property`` for this certificate will be produced
     /// automatically, using `issuerPrivateKey`.
     ///
+    /// A default signature algorithm to use for the signature of this certificate is automatically chosen based
+    /// on the type of the issuer's private key.
+    ///
     /// This API can be used to construct a self-signed key by passing the private key for `publicKey` as the
     /// `issuerPrivateKey` argument.
     ///

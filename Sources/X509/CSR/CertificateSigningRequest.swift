@@ -150,6 +150,9 @@ public struct CertificateSigningRequest {
     /// This API can be used to construct a certificate signing request that can be passed to a certificate
     /// authority. It will correctly generate a signature over the request.
     ///
+    /// A default signature algorithm to use for the signature of this CSR is automatically chosen based on
+    /// the type of the private key.
+    ///
     /// - Parameters:
     ///   - version: The CSR version.
     ///   - subject: The ``DistinguishedName`` of the subject of this CSR
